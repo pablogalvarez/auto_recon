@@ -53,7 +53,7 @@ function tcp_scan() {
 	done < openPorts.tmp
 	
 	# Eliminando archivo temporal de puertos
-	echo -e "\n[-] Removing garbage\n";rm *.tmp
+	echo -e "\n${redColour}[-] Removing garbage${endColour}\n";rm *.tmp
 }
 
 function udp_scan() {
@@ -83,7 +83,7 @@ function udp_scan() {
 	done < openPorts.tmp
 	
 	# Eliminando archivo temporal de puertos
-	echo -e "\n[-] Removing garbage\n";rm *.tmp
+	echo -e "\n${redColour}[-] Removing garbage${endColour}\n";rm *.tmp
 }
 
 # Bucle principal para controlar las opciones de escaneo
@@ -113,7 +113,7 @@ if [ "$help_panel" ]; then
 	echo -e "\n[-] Usage: ./auto_recon -t -i 127.0.0.1 -o 'oG'\n"
 	echo -e "\nHelp panel:\n"
 	echo -e "\t-t\t TCP scan\n"
-	echo -e "\t-u UDP scan\t\n"
+	echo -e "\t-u\t UDP scan\n"
 	echo -e "\t-i\t Target ip\n"
 	echo -e "\t-o\t Export format\n"
 fi
