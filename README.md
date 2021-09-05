@@ -1,2 +1,2 @@
 # auto_recon
-Herramienta personalizada para realizar mis escaneos para reconocimiento de redes
+Herramienta personalizada para facilitarme el escaneo de las maquinas de hackthebox
